@@ -27,9 +27,12 @@ Foi um trabalho bem simples (com uso de IA). Vou falar o que o código faz em ca
 6. def menu()
   Permite ao usuário interagir com o banco de dados por meio do uso de inputs e de chamadas às outras funções.
   É um loop que permite ao usuário realizar quantas operações quiser, até que ele selecione a opção de sair.
+  Foi testado ao realizar todas as operações acima, e no final, ao executar a saída, e funcionou corretamente.
 
 7. def main()
   Executa o comando que cria o banco e o que permite ao usuário interagir com o ele.
+  Foi testado ao realizar todas as operações acima.
 
-8. if __name__ == '__main__'
-  Garante que oo código será executado apenas quando o script for executado diretamente
+9. if __name__ == '__main__'
+  Garante que o código será executado apenas quando o script for executado diretamente.
+  Como os testes funcionaram, conclui-se que esta parte também funcionou.
