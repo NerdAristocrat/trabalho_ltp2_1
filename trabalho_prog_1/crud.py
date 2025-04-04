@@ -1,6 +1,5 @@
 import sqlite3
 
-# Função para criar o banco de dados e a tabela
 def criar_banco():
     conexao = sqlite3.connect('estoque.db')
     cursor = conexao.cursor()
@@ -15,7 +14,6 @@ def criar_banco():
     conexao.commit()
     conexao.close()
 
-# Função para criar um novo produto
 def criar_produto(nome, quantidade, preco):
     try:
         conexao = sqlite3.connect('estoque.db')
@@ -31,7 +29,6 @@ def criar_produto(nome, quantidade, preco):
     finally:
         conexao.close()
 
-# Função para listar todos os produtos
 def listar_produtos():
     conexao = sqlite3.connect('estoque.db')
     cursor = conexao.cursor()
@@ -47,7 +44,6 @@ def listar_produtos():
     
     conexao.close()
 
-# Função para atualizar a quantidade e o preço de um produto
 def atualizar_produto(id_produto, quantidade, preco):
     conexao = sqlite3.connect('estoque.db')
     cursor = conexao.cursor()
@@ -66,7 +62,6 @@ def atualizar_produto(id_produto, quantidade, preco):
     
     conexao.close()
 
-# Função para deletar um produto pelo ID
 def deletar_produto(id_produto):
     conexao = sqlite3.connect('estoque.db')
     cursor = conexao.cursor()
@@ -83,7 +78,6 @@ def deletar_produto(id_produto):
     
     conexao.close()
 
-# Função para exibir o menu interativo
 def menu():
     while True:
         print("\n----- Menu de Operações -----")
@@ -121,7 +115,6 @@ def menu():
         else:
             print("Opção inválida, tente novamente.")
 
-# Função principal para executar o programa
 def main():
     criar_banco()
     menu()
