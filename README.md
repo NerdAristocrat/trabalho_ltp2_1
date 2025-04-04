@@ -1,6 +1,6 @@
 Foi um trabalho bem simples (com uso de IA). Vou falar o que o código faz em cada parte:
 
-1.def criar_banco()
+1. def criar_banco()
   Cria o banco de dados estoque.db, caso ainda não exista.
   Adiciona as colunas id, nome, quantidade e preço ao banco.
 
